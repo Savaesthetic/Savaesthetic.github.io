@@ -6,11 +6,13 @@
 			table, th, td {
 				border:1px solid black;
 				border-collapse: collapse;
-				text-align: center;
 			}
 			table {
+				table-layout: fixed;
 				width: 100%;
-				height: 100%;
+			}
+			td {
+				vertical-align: top;
 			}
 		</style>
 		<title>JackNJill</title>
@@ -18,17 +20,19 @@
 	<body>
 		<h1 style="text-align:center;">JACK AND JILL</h1>
 		<table>
-			<tr>
-				<td>Log</td>
-				<td rowspan="3">Image</td>
-				<td rowspan="2">Instructions</td>
+			<tr height="250px";>
+				<td width="30%"; style="text-align: left;">
+					<b>Log</b>
+				</td>
+				<td style="text-align:center"; width="40%"; rowspan="3">Image</td>
+				<td style="text-align:right"; width="30%"; rowspan="2";><b>Instructions</b></td>
 			</tr>
-			<tr>
-				<td>Money</td>
+			<tr height="250px";>
+				<td><b>Money</b></td>
 			</tr>
-			<tr>
-				<td>Hp</td>
-				<td>Buttons</td>
+			<tr height="250px";>
+				<td><b>Hp</b></td>
+				<td style="text-align:right";><b>Buttons</b></td>
 			</tr>
 		</table>
 	</body>
