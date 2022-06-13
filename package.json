@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Savaesthetic/Savaesthetic.github.io/issues"
   },
-  "homepage": "https://github.com/Savaesthetic/Savaesthetic.github.io",
+  "homepage": "https://github.com/Savaesthetic.github.io",
   "dependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
