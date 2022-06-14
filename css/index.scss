@@ -1,3 +1,52 @@
-.container {
-    color: red;
+body{
+    /* Em is relative sizing. Use in locations such as margin or padding. */
+    margin: 1.5em;
+}
+
+.wrapper {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: black;
+    width: 100%;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        display: block;
+        color: white;
+
+        li {
+            float: left;
+        }
+    }
+}
+
+.hero {
+    background-color: red;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-intro {
+    float: left;
+    p.name {
+        font-size: 2.5rem;
+    }
+    p.about-me {
+        font-size: 1.5rem;
+    }
+}
+
+.hero-img {
+    width: 200px;
+    height: 250px;
 }

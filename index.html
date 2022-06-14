@@ -8,6 +8,47 @@
 	<title>Portfolio</title>
 </head>
 <body>
-	<div class="container">Home</div>
+	<div class="wrapper">
+		<header>
+			<nav>
+				<ul class="nav-sections">
+					<li>About Me</li>
+					<li>Projects</li>
+					<li>Something</li>
+				</ul>
+				<ul class="socials">
+					<li>LinkedIn</li>
+					<li>Github</li>
+				</ul>
+			</nav>
+		</header>
+		<section class="hero">
+			<div class="hero-intro">
+				<p class="name"><b>Alex Sava</b></p>
+				<p class="about-me">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, incidunt.</p>
+			</div>
+			<img class='hero-img' src="images/alex.jpg" alt="Alex Sava">
+		</section>
+		<div class="project-wrapper">
+			<button class="personal" onclick=showPersonal()>Personal</button>
+			<button class="school" onclick=showSchool()>School</button>
+			<div class="carousel" id="project-carousel">Test.Personal</div>
+		</div>
+	</div>
+
+
+	<script>
+		let personal = 'personal';
+		let school = 'school';
+		let div = document.getElementById('project-carousel');
+
+		const showPersonal = () => {
+			div.innerHTML = personal;
+		}
+
+		const showSchool = () => {
+			div.innerHTML = school;
+		}
+	</script>
 </body>
 </html>
