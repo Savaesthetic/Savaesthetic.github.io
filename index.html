@@ -14,7 +14,8 @@
 				<ul class="nav-sections">
 					<li>About Me</li>
 					<li>Projects</li>
-					<li>Something</li>
+					<li>Experience</li>
+					<li>Contact Me</li>
 				</ul>
 				<ul class="socials">
 					<li>LinkedIn</li>
@@ -24,31 +25,69 @@
 		</header>
 		<section class="hero">
 			<div class="hero-intro">
-				<p class="name"><b>Alex Sava</b></p>
-				<p class="about-me">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, incidunt.</p>
+				<p class="hero-name"><b>Alex Sava</b></p>
+				<p class="hero-title">Software Engineer</p>
+				<p class="about-me"><b>Lorem ipsum dolor sit amet.</b></p>
 			</div>
 			<img class='hero-img' src="images/alex.jpg" alt="Alex Sava">
 		</section>
-		<div class="project-wrapper">
-			<button class="personal" onclick=showPersonal()>Personal</button>
-			<button class="school" onclick=showSchool()>School</button>
-			<div class="carousel" id="project-carousel">Test.Personal</div>
-		</div>
+		<section class="projects">
+			<div class="project">
+				<img class="project-img" src="" alt="">
+				<p class="project-title">Title</p>
+				<p class="project-desc">Desc</p>
+			</div>
+			<div class="project">
+				<img class="project-img" src="" alt="">
+				<p class="project-title">Title</p>
+				<p class="project-desc">Desc</p>
+			</div>
+			<div class="project">
+				<img class="project-img" src="" alt="">
+				<p class="project-title">Title</p>
+				<p class="project-desc">Desc</p>
+			</div>
+			<div class="project">
+				<img class="project-img" src="" alt="">
+				<p class="project-title">Title</p>
+				<p class="project-desc">Desc</p>
+			</div>
+		</section>
+		<section class="experience">
+			<p class="experience-title">My Experience</p>
+			<p class="experience-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe numquam aut maxime, at excepturi.</p>
+			<div class="job">
+				<p class="job-title">Title</p>
+				<p class="job-desc">Description</p>
+			</div>
+			<div class="job">
+				<p class="job-title">Title</p>
+				<p class="job-desc">Description</p>
+			</div>
+			<div class="job">
+				<p class="job-title">Title</p>
+				<p class="job-desc">Description</p>
+			</div>
+			<div class="job">
+				<p class="job-title">Title</p>
+				<p class="job-desc">Description</p>
+			</div>
+		</section>
+		<form action="" class="contact">
+			<p class="contact-title">
+				Want to get in touch?<br>
+				Drop me a line!
+			</p>
+			<p class="contact-desc">Lorem ipsum dolor sit amet.</p>
+			<label for="name">Name</label>
+			<input id="name" type="text">
+			<label for="email">Email</label>
+			<input id="email" type="email">
+			<label for="message">Message</label>
+			<textarea name="message" id="message" cols="30" rows="10"></textarea>
+			<input type="submit" value="Submit">
+		</form>
+		<footer>Brought to you with html&scss</footer>
 	</div>
-
-
-	<script>
-		let personal = 'personal';
-		let school = 'school';
-		let div = document.getElementById('project-carousel');
-
-		const showPersonal = () => {
-			div.innerHTML = personal;
-		}
-
-		const showSchool = () => {
-			div.innerHTML = school;
-		}
-	</script>
 </body>
 </html>
