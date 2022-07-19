@@ -94,6 +94,30 @@ header {
 .projects {
     display: grid;
     grid-template-columns: 50% 50%;
+    
+    margin: 0 5rem;
+    height: 200vh;
+
+    .project {
+        box-sizing: border-box;
+        height: 100vh;
+        width: 100%;
+        padding: 5rem;
+
+        .project-img {
+            height: 90%;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .project-info {
+            height: 10%;
+        }
+    }
 }
 
 .experience {

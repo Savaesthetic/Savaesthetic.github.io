@@ -102,6 +102,31 @@ header nav ul li {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
+  margin: 0 5rem;
+  height: 200vh;
+}
+
+.projects .project {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  padding: 5rem;
+}
+
+.projects .project .project-img {
+  height: 90%;
+}
+
+.projects .project .project-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects .project .project-info {
+  height: 10%;
 }
 
 .experience {
