@@ -1,94 +1,75 @@
-body{
+body {
     margin: 0;
-    color: #040303;
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
     box-sizing: border-box;
-    padding: 1rem 20rem;
     height: 10vh;
-    font-size: 25px;
     border-bottom: 2px solid #383838;
-
+    background-color: white;
+    
     #header-name {
-        font-size: 35px;
+        font-size: 2rem;
     }
 
     nav {
-
-        a {
-            color: black;
-            text-decoration: none;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        ul {
-            list-style-type: none;
-
-            li {
-                display: inline-block;
-                margin-left: 2rem;
-            }
-        }
+        display: none;
     }
 }
 
 .hero {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
-    height: 90vh;
-    padding: 10rem 20rem;
-}
+    margin-top: 10vh;
+    padding-top: 1rem;
 
-.hero-text {
-    float: left;
+    .hero-img {
+        width: 400px;
+        height: 500px;
+    }
 
-    .hero-intro {
+    .hero-text {
+        margin: 0 1rem;
+        text-align: center;
 
-        .hero-name {
-            font-size: 3rem;
-            margin: 0;
+        .hero-intro {
+            font-size: 2rem;
     
-            span {
-                color: #035397;
+            .hero-name {
+                font-size: 3rem;
+                margin: 0;
+        
+                span {
+                    color: #035397;
+                }
             }
         }
     
-        .hero-title {
-            font-size: 2rem;
-        }
-    
-        .about-me {
-            font-size: 2rem;
-        }
-    }
-
-    .socials {
-        margin-top: 45px;
-        color: #035397;
-    
-        a {
-            margin-right: 1rem;
-            text-decoration: none;
-        }
-    
-        a:visited {
+        .socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: #035397;
-            font-size: 10em;
+            min-height: 2rem;
+        
+            a {
+                margin-right: 1rem;
+                text-decoration: none;
+            }
+        
+            a:visited {
+                color: #035397;
+            }
         }
     }
-}
-
-.hero-img {
-    width: 400px;
-    height: 500px;
 }
 
 .projects {
@@ -116,6 +97,15 @@ header {
 
         .project-info {
             height: 10%;
+            text-align: center;
+
+            .project-title {
+                font-size: 32px;
+            }
+
+            .project-desc {
+                font-size: 18px;
+            }
         }
     }
 }
@@ -140,4 +130,106 @@ header {
 .contact-form {
     background-color: #cfd2cf;
     
+}
+
+// Tablet size or greater
+@media only screen and (min-width: 680px) {
+    header {
+        justify-content: space-around;
+        
+        #header-name {
+            font-size: 1.5rem;
+        }
+    
+        nav {
+            display: block;
+            font-size: 1.3rem;
+            
+            a {
+                color: black;
+                text-decoration: none;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+    
+            ul {
+                list-style-type: none;
+    
+                li {
+                    display: inline-block;
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+
+    .hero {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        box-sizing: border-box;
+        align-items: flex-start;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+        .hero-img {
+            top: 0;
+            width: 400px;
+            height: 500px;
+        }
+
+        .hero-text {
+            align-self: center;
+            text-align: center;
+
+            .hero-intro {
+                font-size: 1.8rem;
+
+                .hero-name {
+                    font-size: 2.5rem;
+                    margin: 0;
+                }
+
+                .hero-title {
+                    margin: 1rem 0;
+                }
+
+                .about-me {
+                    margin: 1rem 0;
+                }
+            }
+        }
+    }
+}
+
+//Desktop size or greater
+@media only screen and (min-width: 920px) {
+    header {
+        #header-name {
+            font-size: 2rem;
+        }
+
+        nav {
+            font-size: 1.5rem;
+        }
+    }
+
+    .hero {
+        justify-content: space-evenly;
+        padding-top: 5rem;
+        align-items: center;
+
+        .hero-text {
+            text-align: left;
+
+            .hero-intro {
+                font-size: 2rem;
+
+                .hero-name {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
 }

@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  color: #040303;
 }
 
 header {
@@ -10,91 +9,88 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 1rem 20rem;
   height: 10vh;
-  font-size: 25px;
   border-bottom: 2px solid #383838;
+  background-color: white;
 }
 
 header #header-name {
-  font-size: 35px;
+  font-size: 2rem;
 }
 
-header nav a {
-  color: black;
-  text-decoration: none;
-}
-
-header nav a:hover {
-  text-decoration: underline;
-}
-
-header nav ul {
-  list-style-type: none;
-}
-
-header nav ul li {
-  display: inline-block;
-  margin-left: 2rem;
+header nav {
+  display: none;
 }
 
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 90vh;
-  padding: 10rem 20rem;
+  margin-top: 10vh;
+  padding-top: 1rem;
 }
 
-.hero-text {
-  float: left;
+.hero .hero-img {
+  width: 400px;
+  height: 500px;
 }
 
-.hero-text .hero-intro .hero-name {
+.hero .hero-text {
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.hero .hero-text .hero-intro {
+  font-size: 2rem;
+}
+
+.hero .hero-text .hero-intro .hero-name {
   font-size: 3rem;
   margin: 0;
 }
 
-.hero-text .hero-intro .hero-name span {
+.hero .hero-text .hero-intro .hero-name span {
   color: #035397;
 }
 
-.hero-text .hero-intro .hero-title {
-  font-size: 2rem;
-}
-
-.hero-text .hero-intro .about-me {
-  font-size: 2rem;
-}
-
-.hero-text .socials {
-  margin-top: 45px;
+.hero .hero-text .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #035397;
+  min-height: 2rem;
 }
 
-.hero-text .socials a {
+.hero .hero-text .socials a {
   margin-right: 1rem;
   text-decoration: none;
 }
 
-.hero-text .socials a:visited {
+.hero .hero-text .socials a:visited {
   color: #035397;
-  font-size: 10em;
-}
-
-.hero-img {
-  width: 400px;
-  height: 500px;
 }
 
 .projects {
@@ -127,6 +123,15 @@ header nav ul li {
 
 .projects .project .project-info {
   height: 10%;
+  text-align: center;
+}
+
+.projects .project .project-info .project-title {
+  font-size: 32px;
+}
+
+.projects .project .project-info .project-desc {
+  font-size: 18px;
 }
 
 .experience {
@@ -150,5 +155,100 @@ header nav ul li {
 
 .contact-form {
   background-color: #cfd2cf;
+}
+
+@media only screen and (min-width: 680px) {
+  header {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header #header-name {
+    font-size: 1.5rem;
+  }
+  header nav {
+    display: block;
+    font-size: 1.3rem;
+  }
+  header nav a {
+    color: black;
+    text-decoration: none;
+  }
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  header nav ul {
+    list-style-type: none;
+  }
+  header nav ul li {
+    display: inline-block;
+    margin-left: 2rem;
+  }
+  .hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hero .hero-img {
+    top: 0;
+    width: 400px;
+    height: 500px;
+  }
+  .hero .hero-text {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+  }
+  .hero .hero-text .hero-intro {
+    font-size: 1.8rem;
+  }
+  .hero .hero-text .hero-intro .hero-name {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .hero .hero-text .hero-intro .hero-title {
+    margin: 1rem 0;
+  }
+  .hero .hero-text .hero-intro .about-me {
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  header #header-name {
+    font-size: 2rem;
+  }
+  header nav {
+    font-size: 1.5rem;
+  }
+  .hero {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-top: 5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero .hero-text {
+    text-align: left;
+  }
+  .hero .hero-text .hero-intro {
+    font-size: 2rem;
+  }
+  .hero .hero-text .hero-intro .hero-name {
+    font-size: 3rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */
