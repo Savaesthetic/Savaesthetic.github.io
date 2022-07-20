@@ -63,9 +63,6 @@ header {
             a {
                 margin-right: 1rem;
                 text-decoration: none;
-            }
-        
-            a:visited {
                 color: #035397;
             }
         }
@@ -73,63 +70,93 @@ header {
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    
-    margin: 0 5rem;
-    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 1rem;
 
     .project {
         box-sizing: border-box;
-        height: 100vh;
-        width: 100%;
-        padding: 5rem;
+        margin-bottom: 1rem;
 
         .project-img {
-            height: 90%;
+            background-color: #383838;
+            padding: .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             img {
-                height: 100%;
                 width: 100%;
-                object-fit: cover;
+                height: 100%;
             }
         }
 
         .project-info {
-            height: 10%;
             text-align: center;
+            box-sizing: border-box;
+            padding: 1rem 0;
+            font-size: 1.4rem;
 
             .project-title {
-                font-size: 32px;
+                font-size: 2rem;
+                font-weight: bold;
+                margin: 0;
+                margin-bottom: 1rem;
             }
 
             .project-desc {
-                font-size: 18px;
+                margin: 0;
+                margin-bottom: 1rem;
+            }
+
+            .project-links {
+                display: flex;
+                flex-direction: column;
+                font-size: 1.6rem;
+
+                a {
+                    margin-bottom: .2rem;
+                    text-decoration: none;
+                    color: #035397;
+
+                    i {
+                        font-size: 1.8rem;
+                    }
+                }
             }
         }
     }
 }
 
 .experience {
-    padding-left: 20rem;
+    margin-top: 10vh;
 
     .jobs {
         display: flex;
         
         .job {
             margin-right: 15rem;
+
+            img {
+                height: 5rem;
+                max-width: 10rem;
+            }
         }
     }
 }
 
 .contact {
-    padding-left: 20rem;
-    padding-right: 20rem;
+    display: flex;
+    justify-content: center;
+    background-color: #383838;
+    color: whitesmoke;
 }
 
-.contact-form {
-    background-color: #cfd2cf;
-    
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #383838;
+    font-size: 2rem;
 }
 
 // Tablet size or greater
@@ -172,6 +199,8 @@ header {
         align-items: flex-start;
         margin-left: 1rem;
         margin-right: 1rem;
+        margin-top: 2rem;
+        padding-top: 10vh;
 
         .hero-img {
             top: 0;
@@ -201,6 +230,10 @@ header {
             }
         }
     }
+
+    .projects {
+        padding-top: 10vh;
+    }
 }
 
 //Desktop size or greater
@@ -217,8 +250,8 @@ header {
 
     .hero {
         justify-content: space-evenly;
-        padding-top: 5rem;
         align-items: center;
+        margin-top: 4rem;
 
         .hero-text {
             text-align: left;
@@ -229,6 +262,37 @@ header {
                 .hero-name {
                     font-size: 3rem;
                 }
+            }
+
+            .socials {
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    .projects {
+
+        .project {
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+            .project-info {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 2rem;
+
+                .project-title {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        .reverse {
+            .project-img {
+                order: 2;
             }
         }
     }
