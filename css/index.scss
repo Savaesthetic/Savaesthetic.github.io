@@ -2,6 +2,11 @@ body {
     margin: 0;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -129,17 +134,48 @@ header {
 }
 
 .experience {
-    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .experience-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .experience-desc {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 
     .jobs {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         
         .job {
-            margin-right: 15rem;
+            text-align: center;
 
             img {
                 height: 5rem;
-                max-width: 10rem;
+                max-width: 10.4rem;
+            }
+
+            #harkins-img {
+                margin: 0 2.5rem;
+            }
+
+            .job-title {
+                font-size: 1.3rem;
+                margin: 0;
+            
+            }
+
+            .job-desc {
+                font-size: 1.2rem;
+                margin-top: 0;
+                margin-bottom: 1.5rem;
             }
         }
     }
@@ -233,6 +269,19 @@ footer {
 
     .projects {
         padding-top: 10vh;
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .experience {
+        padding-top: 10vh;
+        margin: 0 1rem;
+
+        .jobs {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+        }
     }
 }
 
@@ -282,10 +331,10 @@ footer {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                font-size: 2rem;
+                font-size: 1.8rem;
 
                 .project-title {
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                 }
             }
         }
@@ -294,6 +343,25 @@ footer {
             .project-img {
                 order: 2;
             }
+        }
+    }
+
+    .experience {
+        width: 65%;
+        align-self: center;
+
+        .experience-title {
+            align-self: flex-start;
+            text-align: left;
+        }
+
+        .experience-desc {
+            align-self: flex-start;
+            text-align: left;
+        }
+
+        .jobs {
+            justify-content: space-evenly;
         }
     }
 }
