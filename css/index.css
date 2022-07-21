@@ -247,6 +247,66 @@ header nav {
           justify-content: center;
   background-color: #383838;
   color: whitesmoke;
+  padding: 1rem;
+}
+
+.contact .contact-form {
+  width: 25rem;
+}
+
+.contact .contact-form .contact-title {
+  font-size: 2rem;
+}
+
+.contact .contact-form .contact-desc {
+  font-size: 1.2rem;
+}
+
+.contact .contact-form .form-input {
+  margin-bottom: 1rem;
+}
+
+.contact .contact-form .form-input label {
+  font-size: 1.5rem;
+}
+
+.contact .contact-form .form-input input {
+  width: 10rem;
+  height: 1.5rem;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact .contact-form .form-input #email {
+  width: 12rem;
+}
+
+.contact .contact-form .form-input textarea {
+  width: 24.5rem;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact .contact-form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .contact-form #form-submit {
+  border: none;
+  background-color: #96897B;
+  color: #000;
+  padding: .8rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 footer {
@@ -346,6 +406,19 @@ footer {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .contact {
+    padding: 1rem;
+  }
+  .contact .contact-form {
+    width: 30rem;
+  }
+  .contact .contact-form .form-input input {
+    width: 11rem;
+    height: 1.5rem;
+  }
+  .contact .contact-form .form-input textarea {
+    width: 29.5rem;
+  }
 }
 
 @media only screen and (min-width: 920px) {
@@ -427,6 +500,35 @@ footer {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  .contact {
+    margin: 1rem;
+    padding: 0 15%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .contact .contact-form {
+    width: 100%;
+  }
+  .contact .contact-form .form-input {
+    width: 50%;
+    min-width: 37.5rem;
+  }
+  .contact .contact-form .form-input input {
+    height: 1.8rem;
+    width: 15rem;
+    font-size: 1.2rem;
+  }
+  .contact .contact-form .form-input #email {
+    width: 15rem;
+  }
+  .contact .contact-form .form-input textarea {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .contact .contact-form #form-submit {
+    margin-bottom: 1rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

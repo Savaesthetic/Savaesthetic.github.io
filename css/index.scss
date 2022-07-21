@@ -186,6 +186,62 @@ header {
     justify-content: center;
     background-color: #383838;
     color: whitesmoke;
+    padding: 1rem;
+
+    .contact-form {
+        width: 25rem;
+
+        .contact-title {
+            font-size: 2rem;
+        }
+    
+        .contact-desc {
+            font-size: 1.2rem;
+        }
+    
+        .form-input {
+            margin-bottom: 1rem;
+    
+            label {
+                font-size: 1.5rem;
+            }
+    
+            input {
+                width: 10rem;
+                height: 1.5rem;
+                font-size: 1rem;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #email {
+                width: 12rem;
+            }
+            
+            textarea {
+                width: 24.5rem;
+                font-size: 1rem;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #form-submit {
+            border: none;
+            background-color: #96897B;
+            color: #000;
+            padding: .8rem 2rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    }
 }
 
 footer {
@@ -283,6 +339,26 @@ footer {
             justify-content: space-around;
         }
     }
+
+    .contact {
+        padding: 1rem;
+    
+        .contact-form {
+            width: 30rem;
+        
+            .form-input {
+        
+                input {
+                    width: 11rem;
+                    height: 1.5rem;
+                }
+                
+                textarea {
+                    width: 29.5rem;
+                }
+            }
+        }
+    }
 }
 
 //Desktop size or greater
@@ -362,6 +438,40 @@ footer {
 
         .jobs {
             justify-content: space-evenly;
+        }
+    }
+
+    .contact {
+        margin: 1rem;
+        padding: 0 15%;
+        justify-content: flex-start;
+
+        .contact-form {
+            width: 100%;
+
+            .form-input {
+                width: 50%;
+                min-width: 37.5rem;
+
+                input {
+                    height: 1.8rem;
+                    width: 15rem;
+                    font-size: 1.2rem;
+                }
+
+                #email {
+                    width: 15rem;
+                }
+
+                textarea {
+                    width: 100%;
+                    font-size: 1.2rem;
+                }
+            }
+
+            #form-submit {
+                margin-bottom: 1rem;
+            }
         }
     }
 }

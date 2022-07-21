@@ -128,28 +128,30 @@
 			</div>
 		</section>
 		<section id="contact" class="contact">
-			<form action="" class="contact-form">
+			<form action="mailto:asavaus@gmail.com?subject=Portfolio Contact" method="post" enctype="text/plain" class="contact-form">
 				<p class="contact-title">
 					Want to get in touch?<br>
 					Drop me a line!
 				</p>
-				<p class="contact-desc">Lorem ipsum dolor sit amet.</p>
-				<div>
-					<label for="name">Name</label>
-					<br>
-					<input id="name" type="text">
+				<p class="contact-desc">Leave your info down below with a message and I'll get back to you as soon as possible.</p>
+				<div class="form-input form-group">
+					<div>
+						<label for="name">Name</label>
+						<br>
+						<input name="name" id="name" type="text" placeholder="Enter your name">
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<br>
+						<input name="email" id="email" type="email" placeholder="Enter your email">
+					</div>
 				</div>
-				<div>
-					<label for="email">Email</label>
-					<br>
-					<input id="email" type="email">
-				</div>
-				<div>
+				<div class="form-input">
 					<label for="message">Message</label>
 					<br>
-					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+					<textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
 				</div>
-				<input type="submit" value="Submit">
+				<input id="form-submit" type="submit" value="Submit">
 			</form>
 		</section>
 		<footer>Brought to you with html&scss</footer>
