@@ -316,8 +316,9 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-top: 2px solid #383838;
-  font-size: 2rem;
+  background-color: #96897B;
+  font-size: 1.5rem;
+  padding: .5rem 0;
 }
 
 @media only screen and (min-width: 680px) {
@@ -503,6 +504,7 @@ footer {
   }
   .contact {
     margin: 1rem;
+    margin-bottom: 0;
     padding: 0 15%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -529,6 +531,9 @@ footer {
   }
   .contact .contact-form #form-submit {
     margin-bottom: 1rem;
+  }
+  footer {
+    margin: 0 1rem;
   }
 }
 /*# sourceMappingURL=index.css.map */
