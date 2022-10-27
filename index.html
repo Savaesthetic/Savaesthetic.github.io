@@ -1,217 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="./css/index.css">
-	<script src="https://kit.fontawesome.com/19010320db.js" crossorigin="anonymous"></script>
-	<title>Alex Sava Portfolio</title>
-</head>
-<body>
-	<div class="wrapper">
-		<header>
-			<div id="header-name">Alex Sava</div>
-			<nav>
-				<ul class="nav-sections">
-					<li><a href="#hero">About Me</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#experience">Experience</a></li>
-					<li><a href="#contact">Contact Me</a></li>
-					<li><a href="assets/Sava_Speak_Resume.pdf" target="_blank">Resume</a></li>
-				</ul>
-			</nav>
-		</header>
-		<section id="hero" class="hero">
-			<img class='hero-img' src="images/alex.jpg" alt="Alex Sava">
-			<div class="hero-text">
-				<div class="hero-intro">
-					<p class="hero-name"><b>Hey There,<br>I'm <span>Alex Sava</span></b></p>
-					<p class="hero-title">Software Engineer</p>
-					<p class="about-me"><b>New grad from the University of Arizona<br>interested in any and every type of<br> software development.</b></p>
-				</div>
-				<div class="socials">
-					<a href="https://github.com/Savaesthetic" target="_blank">
-						<i class="fa-brands fa-github fa-2xl"></i>
-					</a>
-					<a href="https://www.linkedin.com/in/alexandersava/" target="_blank">
-						<i class="fa-brands fa-linkedin fa-2xl"></i>
-					</a>
-				</div>
-			</div>
-		</section>
-		<section id="projects" class="projects">
-			<div class="project">
-				<div class="project-img">
-					<img class="project-img" src="images/Bluey.png" alt="Bluey Site">
-				</div>
-				<div class="project-info">
-					<p class="project-title">Bluey</p>
-					<p class="project-desc">
-						Full stack application built to mimic Reddit.<br>
-						Leverages docker to build project in containers and allow deployment on any host machine.<br>
-						Functional but still in development. Next feature will be authentication.
-					</p>
-					<div class="project-links">
-						<a href="https://github.com/Savaesthetic/Bluey" target="_blank">
-							<i class="fa-brands fa-github-square"></i> Github Repo
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="project reverse">
-				<div class="project-img">
-					<img class="project-img" src="images/static-shoe.png" alt="Shoe Site">
-				</div>
-				<div class="project-info">
-					<p class="project-title">Shoe Brand</p>
-					<p class="project-desc">
-						Template for a fictional ShoeBrand storepage.<br>
-						Built to practic with and better understand HTML and SCSS/CSS.<br>
-						Fully static website made out of solely HTML and CSS.
-					</p>
-					<div class="project-links">
-						<a href="https://62d6362bfbaa763a71340ef7--eloquent-croquembouche-a93c6a.netlify.app/" target="_blank">
-							<i class="fa-solid fa-globe text-dark"></i> Website
-						</a>
-						<a href="https://github.com/Savaesthetic/static-shoe-site" target="_blank">
-							<i class="fa-brands fa-github-square"></i> Github Repo
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="project">
-				<div class="project-img">
-					<img class="project-img" src="images/quiz-app.png" alt="Quiz Site">
-				</div>
-				<div class="project-info">
-					<p class="project-title">Quiz Application</p>
-					<p class="project-desc">Larger quiz app built using React to delve deaper into state management.<br>
-						Makes use of Redux and Redux Toolkit to manage state over multiple components and pages.<br>
-						Technologies used includes React, Redux, Redux Toolkit, HTML, and CSS.
-					</p>
-					<div class="project-links">
-						<a href="https://62d66fe7af5f2a00086c2cea--jocular-sawine-6f0033.netlify.app/"  target="_blank">
-							<i class="fa-solid fa-globe text-dark"></i> Website
-						</a>
-						<a href="https://github.com/Savaesthetic/React-Quiz-App" target="_blank">
-							<i class="fa-brands fa-github-square"></i> Github Repo
-						</a>
-					</div>
-				</div>
-			</div>
-			<div id="show-more" style="display:none">
-				<div class="project reverse">
-					<div class="project-img">
-						<img class="project-img" src="images/bestReads.png" alt="BestReads Site">
-					</div>
-					<div class="project-info">
-						<p class="project-title">BestReads</p>
-						<p class="project-desc">
-							Book recommendation site modified from a school project.<br>
-							Site data is stored in a PostgreSQL database for querying.<br>
-							Non-React website built using PHP using the MVC pattern for application interfacing with a PostgreSQL database serving as the backend model.
-						</p>
-						<div class="project-links">
-							<a href="https://sava-best-reads.herokuapp.com/"  target="_blank">
-								<i class="fa-solid fa-globe text-dark"></i> Website
-							</a>
-							<a href="https://github.com/Savaesthetic/PHP-BestReads" target="_blank">
-								<i class="fa-brands fa-github-square"></i> Github Repo
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="project">
-					<div class="project-img">
-						<img class="project-img" src="images/todo.png" alt="Todo Site">
-					</div>
-					<div class="project-info">
-						<p class="project-title">Todo Application</p>
-						<p class="project-desc">
-							Simple todo application allowing creation and deletion of todos.<br>
-							First application built using React to learn and understand state.<br>
-							Standalone front end application built with React, HTML, and CSS.
-						</p>
-						<div class="project-links">
-							<a href="https://62d66d5fe7041c000886f6a1--incomparable-meringue-b3309f.netlify.app/"  target="_blank">
-								<i class="fa-solid fa-globe text-dark"></i> Website
-							</a>
-							<a href="https://github.com/Savaesthetic/React-Todo" target="_blank">
-								<i class="fa-brands fa-github-square"></i> Github Repo
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<button id="projects-button" onclick="showMoreProjects()">More Projects</button>
-		</section>
-		<section id="experience" class="experience">
-			<p class="experience-title">My Experience</p>
-			<p class="experience-desc">
-				Attending university out of town had me experience a variety of jobs as I moved between my home and the University Campus.<br>
-				Although I've mainly worked in entry level jobs, I've learned a lot about hardwork, patience, deadlines, working in teams and even leading them on occasion.
-			</p>
-			<div class="jobs">
-				<div class="job">
-					<img id="harkins-img" src="images/harkins.webp" alt="Harkins Icon">
-					<p class="job-title">Harkins Theatres</p>
-					<p class="job-desc">2017-2019</p>
-				</div>
-				<div class="job">
-					<img src="images/Amazon_icon.svg" alt="Amazon Icon">
-					<p class="job-title">Amazon Warehouse</p>
-					<p class="job-desc">2019-2021</p>
-				</div>
-				<div class="job">
-					<img src="images/zinc-bistro.png" alt="Zinc Bistro Logo">
-					<p class="job-title">Zinc Bistro</p>
-					<p class="job-desc">2021-2022</p>
-				</div>
-			</div>
-		</section>
-		<section id="contact" class="contact">
-			<form action="mailto:asavaus@gmail.com?subject=Portfolio Contact" method="post" enctype="text/plain" class="contact-form">
-				<p class="contact-title">
-					Want to get in touch?<br>
-					Drop me a line!
-				</p>
-				<p class="contact-desc">Leave your info down below with a message and I'll get back to you as soon as possible.</p>
-				<div class="form-input form-group">
-					<div>
-						<label for="name">Name</label>
-						<br>
-						<input name="name" id="name" type="text" placeholder="Enter your name">
-					</div>
-					<div>
-						<label for="email">Email</label>
-						<br>
-						<input name="email" id="email" type="email" placeholder="Enter your email">
-					</div>
-				</div>
-				<div class="form-input">
-					<label for="message">Message</label>
-					<br>
-					<textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
-				</div>
-				<input id="form-submit" type="submit" value="Submit">
-			</form>
-		</section>
-		<footer>© 2022 Alexander Sava</footer>
-	</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/19010320db.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Alex Sava Portfolio</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div id="header-name">Alex Sava</div>
+        <nav>
+          <ul class="nav-sections">
+            <li><a href="#hero">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li>
+              <a href="assets/Sava_Speak_Resume.pdf" target="_blank">Resume</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section id="hero" class="hero">
+        <img class="hero-img" src="images/alex.jpg" alt="Alex Sava" />
+        <div class="hero-text">
+          <div class="hero-intro">
+            <p class="hero-name">
+              <b>Hey There,<br />I'm <span>Alex Sava</span></b>
+            </p>
+            <p class="hero-title">Software Engineer</p>
+            <p class="about-me">
+              <b
+                >New grad from the University of Arizona<br />interested in any
+                and every type of<br />
+                software development.</b
+              >
+            </p>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/Savaesthetic" target="_blank">
+              <i class="fa-brands fa-github fa-2xl"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/alexandersava/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin fa-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects">
+        <div class="project">
+          <div class="project-img">
+            <img class="project-img" src="images/Bluey.png" alt="Bluey Site" />
+          </div>
+          <div class="project-info">
+            <p class="project-title">Bluey</p>
+            <p class="project-desc">
+              Full stack application built to mimic Reddit.<br />
+              Leverages docker to build project in containers and allow
+              deployment on any host machine.<br />
+              Functional but still in development. Next feature will be
+              authentication.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Savaesthetic/Bluey" target="_blank">
+                <i class="fa-brands fa-github-square"></i> Github Repo
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project reverse">
+          <div class="project-img">
+            <img
+              class="project-img"
+              src="images/static-shoe.png"
+              alt="Shoe Site"
+            />
+          </div>
+          <div class="project-info">
+            <p class="project-title">Shoe Brand</p>
+            <p class="project-desc">
+              Template for a fictional ShoeBrand storepage.<br />
+              Built to practic with and better understand HTML and SCSS/CSS.<br />
+              Fully static website made out of solely HTML and CSS.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://62d6362bfbaa763a71340ef7--eloquent-croquembouche-a93c6a.netlify.app/"
+                target="_blank"
+              >
+                <i class="fa-solid fa-globe text-dark"></i> Website
+              </a>
+              <a
+                href="https://github.com/Savaesthetic/static-shoe-site"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github-square"></i> Github Repo
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-img">
+            <img
+              class="project-img"
+              src="images/quiz-app.png"
+              alt="Quiz Site"
+            />
+          </div>
+          <div class="project-info">
+            <p class="project-title">Quiz Application</p>
+            <p class="project-desc">
+              Larger quiz app built using React to delve deaper into state
+              management.<br />
+              Makes use of Redux and Redux Toolkit to manage state over multiple
+              components and pages.<br />
+              Technologies used includes React, Redux, Redux Toolkit, HTML, and
+              CSS.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://62d66fe7af5f2a00086c2cea--jocular-sawine-6f0033.netlify.app/"
+                target="_blank"
+              >
+                <i class="fa-solid fa-globe text-dark"></i> Website
+              </a>
+              <a
+                href="https://github.com/Savaesthetic/React-Quiz-App"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github-square"></i> Github Repo
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="show-more" style="display: none">
+          <div class="project reverse">
+            <div class="project-img">
+              <img
+                class="project-img"
+                src="images/bestReads.png"
+                alt="BestReads Site"
+              />
+            </div>
+            <div class="project-info">
+              <p class="project-title">BestReads</p>
+              <p class="project-desc">
+                Book recommendation site modified from a school project.<br />
+                Site data is stored in a PostgreSQL database for querying.<br />
+                Non-React website built using PHP using the MVC pattern for
+                application interfacing with a PostgreSQL database serving as
+                the backend model.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://sava-best-reads.herokuapp.com/"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-globe text-dark"></i> Website
+                </a>
+                <a
+                  href="https://github.com/Savaesthetic/PHP-BestReads"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-github-square"></i> Github Repo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-img">
+              <img class="project-img" src="images/todo.png" alt="Todo Site" />
+            </div>
+            <div class="project-info">
+              <p class="project-title">Todo Application</p>
+              <p class="project-desc">
+                Simple todo application allowing creation and deletion of
+                todos.<br />
+                First application built using React to learn and understand
+                state.<br />
+                Standalone front end application built with React, HTML, and
+                CSS.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://62d66d5fe7041c000886f6a1--incomparable-meringue-b3309f.netlify.app/"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-globe text-dark"></i> Website
+                </a>
+                <a
+                  href="https://github.com/Savaesthetic/React-Todo"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-github-square"></i> Github Repo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="projects-button" onclick="showMoreProjects()">
+          More Projects
+        </button>
+      </section>
+      <section id="experience" class="experience">
+        <p class="experience-title">My Experience</p>
+        <p class="experience-desc">
+          Attending university out of town had me experience a variety of jobs
+          as I moved between my home and the University Campus.<br />
+          Although I've mainly worked in entry level jobs, I've learned a lot
+          about hardwork, patience, deadlines, working in teams and even leading
+          them on occasion.
+        </p>
+        <div class="jobs">
+          <div class="job">
+            <img
+              id="harkins-img"
+              src="images/harkins.webp"
+              alt="Harkins Icon"
+            />
+            <p class="job-title">Harkins Theatres</p>
+            <p class="job-desc">2017-2019</p>
+          </div>
+          <div class="job">
+            <img src="images/Amazon_icon.svg" alt="Amazon Icon" />
+            <p class="job-title">Amazon Warehouse</p>
+            <p class="job-desc">2020-2021</p>
+          </div>
+          <div class="job">
+            <img src="images/zinc-bistro.png" alt="Zinc Bistro Logo" />
+            <p class="job-title">Zinc Bistro</p>
+            <p class="job-desc">2021-2022</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <form
+          action="mailto:asavaus@gmail.com?subject=Portfolio Contact"
+          method="post"
+          enctype="text/plain"
+          class="contact-form"
+        >
+          <p class="contact-title">
+            Want to get in touch?<br />
+            Drop me a line!
+          </p>
+          <p class="contact-desc">
+            Leave your info down below with a message and I'll get back to you
+            as soon as possible.
+          </p>
+          <div class="form-input form-group">
+            <div>
+              <label for="name">Name</label>
+              <br />
+              <input
+                name="name"
+                id="name"
+                type="text"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <br />
+              <input
+                name="email"
+                id="email"
+                type="email"
+                placeholder="Enter your email"
+              />
+            </div>
+          </div>
+          <div class="form-input">
+            <label for="message">Message</label>
+            <br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <input id="form-submit" type="submit" value="Submit" />
+        </form>
+      </section>
+      <footer>© 2022 Alexander Sava</footer>
+    </div>
 
-	<script>
-		function showMoreProjects() {
-			let div = document.getElementById("show-more");
-			let button = document.getElementById("projects-button")
-			if (div.style.display === "none") {
-				div.style.display = "inline";
-				button.innerHTML = "Less Projects";
-			} else {
-				div.style.display = "none";
-				button.innerHTML = "More Projects";
-			}
-		}
-	</script>
-</body>
+    <script>
+      function showMoreProjects() {
+        let div = document.getElementById("show-more");
+        let button = document.getElementById("projects-button");
+        if (div.style.display === "none") {
+          div.style.display = "inline";
+          button.innerHTML = "Less Projects";
+        } else {
+          div.style.display = "none";
+          button.innerHTML = "More Projects";
+        }
+      }
+    </script>
+  </body>
 </html>
